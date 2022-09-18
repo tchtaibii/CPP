@@ -2,26 +2,32 @@
 #include "Cat.hpp"
 #include "Brain.hpp"
 
+void f()
+{
+    Cat a;
+    a.setBrain(0, "jack");
+    a.setBrain(1, "barbosa");
+    a.setBrain(2, "rick");
+    Cat b(a);
+    std::cout << b.getBrain(0) << std::endl;
+    std::cout << b.getBrain(1) << std::endl;
+    std::cout << b.getBrain(100) << std::endl;
+
+}
 int main()
 {
     const Animal* meta = new Animal();
-    const Animal* j1 = new Dog();
-    const Animal* i1 = new Cat();
-    
-    std::cout << j1->getType() << " " << std::endl;
-    std::cout << i1->getType() << " " << std::endl;
-    i1->makeSound(); //will output the cat sound!
-    j1->makeSound();
-    meta->makeSound();
-
-    delete i1;
-    delete j1;
-    delete meta;
-
     const Animal* j = new Dog();
     const Animal* i = new Cat();
-
-    delete j;//should not create a leak
+    std::cout << j->getType() << " " << std::endl;
+    std::cout << i->getType() << " " << std::endl;
+    i->makeSound(); //will output the cat sound!
+    j->makeSound();
+    meta->makeSound();
+    delete j;
     delete i;
-    system("leaks Animal");
+    delete meta;
+
+    // f();
+    //     system("leaks Animal");
 }

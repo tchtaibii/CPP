@@ -17,7 +17,7 @@ Cat::Cat(const Cat& cp)
     std::cout << "copy constructor (Cat)" << std::endl;
 }
 
-Cat Cat::operator=(const Cat& cp)
+Cat& Cat::operator=(const Cat& cp)
 {
     std::cout << "assignment copy (Cat)" << std::endl;
     this->type = cp.type;
@@ -48,7 +48,7 @@ WrongCat::WrongCat(const WrongCat& cp)
     std::cout << "copy constructor (WrongCat)" << std::endl;
 }
 
-WrongCat WrongCat::operator=(const WrongCat& cp)
+WrongCat& WrongCat::operator=(const WrongCat& cp)
 {
     std::cout << "assignment copy (WrongCat)" << std::endl;
     this->type = cp.type;

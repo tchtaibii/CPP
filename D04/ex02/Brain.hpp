@@ -6,7 +6,7 @@
 /*   By: tchtaibi <tchtaibi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 16:16:15 by tchtaibi          #+#    #+#             */
-/*   Updated: 2022/09/08 16:42:34 by tchtaibi         ###   ########.fr       */
+/*   Updated: 2022/09/12 10:09:27 by tchtaibi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,9 @@ class Brain {
         Brain();
         ~Brain();
         Brain(const Brain &cp);
-        Brain operator=(const Brain &cp);   
+        Brain& operator=(const Brain &cp);
+        std::string get(int index);
+        void set(int index, std::string value);
 };
 
 #endif

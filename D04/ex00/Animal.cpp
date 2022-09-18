@@ -6,7 +6,7 @@
 /*   By: tchtaibi <tchtaibi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/05 14:50:33 by tchtaibi          #+#    #+#             */
-/*   Updated: 2022/09/06 23:47:31 by tchtaibi         ###   ########.fr       */
+/*   Updated: 2022/09/12 10:05:04 by tchtaibi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ Animal::Animal(const Animal& cp)
     *this = cp;
 }
 
-Animal Animal::operator=(const Animal& cp)
+Animal& Animal::operator=(const Animal& cp)
 {
     std::cout << "assignment copy (Animal)" << std::endl;
     this->type = cp.type;
@@ -63,7 +63,7 @@ WrongAnimal::WrongAnimal(const WrongAnimal& cp)
     *this = cp;
 }
 
-WrongAnimal WrongAnimal::operator=(const WrongAnimal& cp)
+WrongAnimal& WrongAnimal::operator=(const WrongAnimal& cp)
 {
     std::cout << "assignment copy (WrongAnimal)" << std::endl;
     this->type = cp.type;

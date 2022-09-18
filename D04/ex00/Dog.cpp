@@ -17,7 +17,7 @@ Dog::Dog(const Dog& cp)
     std::cout << "copy constructor (Dog)" << std::endl;
 }
 
-Dog Dog::operator=(const Dog& cp)
+Dog& Dog::operator=(const Dog& cp)
 {
     std::cout << "assignment copy (Dog)" << std::endl;
     this->type = cp.type;
@@ -47,7 +47,7 @@ WrongDog::WrongDog(const WrongDog& cp)
     std::cout << "copy constructor (WrongDog)" << std::endl;
 }
 
-WrongDog WrongDog::operator=(const WrongDog& cp)
+WrongDog& WrongDog::operator=(const WrongDog& cp)
 {
     std::cout << "assignment copy (WrongDog)" << std::endl;
     this->type = cp.type;

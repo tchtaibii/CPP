@@ -10,9 +10,11 @@ class Cat : public Animal
     public:
         Cat();
         Cat(const Cat& cp);
-        Cat operator=(const Cat& cp);
+        Cat& operator=(const Cat& cp);
         ~Cat();
         void makeSound() const;
+        void setBrain(int index, std::string value);
+        std::string getBrain(int index);
 };
 
 

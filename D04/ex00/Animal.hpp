@@ -6,7 +6,7 @@
 /*   By: tchtaibi <tchtaibi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/05 14:50:45 by tchtaibi          #+#    #+#             */
-/*   Updated: 2022/09/06 23:43:38 by tchtaibi         ###   ########.fr       */
+/*   Updated: 2022/09/12 10:05:03 by tchtaibi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Animal
         virtual void    makeSound() const;
         Animal();
         Animal(const Animal& cp);
-        Animal operator=(const Animal& cp);
+        Animal& operator=(const Animal& cp);
         virtual ~Animal();
         std::string getType() const;
 };
@@ -34,7 +34,7 @@ class WrongAnimal
         void    makeSound() const;
         WrongAnimal();
         WrongAnimal(const WrongAnimal& cp);
-        WrongAnimal operator=(const WrongAnimal& cp);
+        WrongAnimal& operator=(const WrongAnimal& cp);
         ~WrongAnimal();
         std::string getType() const;
 };
