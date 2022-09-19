@@ -6,7 +6,7 @@
 /*   By: tchtaibi <tchtaibi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 12:40:48 by tchtaibi          #+#    #+#             */
-/*   Updated: 2022/09/17 20:24:02 by tchtaibi         ###   ########.fr       */
+/*   Updated: 2022/09/19 14:26:08 by tchtaibi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,27 +25,24 @@ int main()
     std::cout << "******************" << std::endl;
     std::cout << a << std::endl;
     std::cout << "******************" << std::endl;
-    std::cout << b;
+    std::cout << b << std::endl;
     std::cout << "******************" << std::endl;
-    std::cout << c;
+    std::cout << c << std::endl;
     std::cout << "******************" << std::endl;
-    std::cout << d;
+    std::cout << d << std::endl;
     std::cout << "******************" << std::endl;
     try 
     {
         b.beSigned(a);
         a.signForm(b);
-        b.execute(a);
         a.executeForm(b);
         std::cout << "******************" << std::endl;
         c.beSigned(a);
         a.signForm(c);
-        c.execute(a);
         a.executeForm(c);
         std::cout << "******************" << std::endl;
         d.beSigned(a);
         a.signForm(d);
-        d.execute(a);
         a.executeForm(d);
         std::cout << "******************" << std::endl;
     }

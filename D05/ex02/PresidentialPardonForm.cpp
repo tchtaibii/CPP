@@ -1,8 +1,13 @@
 #include "PresidentialPardonForm.hpp"
 
+PresidentialPardonForm::PresidentialPardonForm()
+{
+    std::cout << "default constructor (PresidentialPardonForm)" << std::endl;
+}
+
 PresidentialPardonForm::PresidentialPardonForm(std::string target) : Form("presidential pardon", 25, 5, target)
 {
-    std::cout << "Default Constructor (PresidentialPardonForm)" << std::endl;
+    
 }
 
 PresidentialPardonForm::~PresidentialPardonForm()
