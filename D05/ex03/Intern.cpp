@@ -50,6 +50,5 @@ Form* Intern::makeForm(const std::string name_form, const std::string target_for
     }
     for (int i = 0; i < 3; i++)
             delete this->form[i];
-    std::cout << name_form << " don't exist " << std::endl;
-    return NULL;
+    throw ErroInter();
 }
