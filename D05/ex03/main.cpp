@@ -6,7 +6,7 @@
 /*   By: tchtaibi <tchtaibi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 12:40:48 by tchtaibi          #+#    #+#             */
-/*   Updated: 2022/09/19 18:48:47 by tchtaibi         ###   ########.fr       */
+/*   Updated: 2022/09/20 13:22:08 by tchtaibi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void test_form()
 
     try
     {
-        rrf = someRandomIntern.makeForm("", "Bender");
+        rrf = someRandomIntern.makeForm("presidential pardon", "Bender");
         rrf->beSigned(b);
         b.signForm(*rrf);
         rrf->execute(b);

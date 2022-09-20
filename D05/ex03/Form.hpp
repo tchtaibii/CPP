@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include "Bureaucrat.hpp"
+#include <cstdlib>
+
 
 class Bureaucrat;
 
