@@ -25,7 +25,7 @@ void ShrubberyCreationForm::execute(Bureaucrat const & executor) const
     else
     {
         std::ofstream file(get_target());
-		std::string str = "                      .					\
+		    std::string str = "                      .					\
                                               .         ;  		\n	\
                  .              .              ;%     ;;   		\n	\
                    ,           ,                :;%  %;   		\n	\
@@ -53,8 +53,8 @@ void ShrubberyCreationForm::execute(Bureaucrat const & executor) const
                                ;%@@@@%::;.          			\n	\
                               ;%@@@@%%:;;;. 					\n	\
                           ...;%@@@@@%%:;;;;,..\n";
-		file << str;
-		file.close();
+        file << str;
+        file.close();
     }
 }
 
