@@ -11,7 +11,6 @@
 template <typename T>
 void easyfind(T x, int y)
 {
-    // declaration
     // implementation
     typename T::iterator it = std::find(x.begin(), x.end(), y);
     if (it == x.end())
